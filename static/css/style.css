@@ -1,0 +1,81 @@
+
+.header {
+ background-image: linear-gradient(to right ,blue,indigo);
+  color: white;
+    padding: 20px;
+    background-position: left right top;
+    text-align: center;
+    padding-left: 10px;
+    font-family: cursive;
+}
+
+.Image-Input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image_preview{
+    width: 300px;
+    min-height: 100px;
+    border: 2px solid black;
+    margin-top: 20px;
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_text{
+    text-align: center;
+    font-family: cursive;
+}
+
+.image-preview__image{
+    display: none;
+    width: 100%;
+}
+
+.btn-primary{
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #7c7c7c;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #000000;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+.btn-primary:hover{
+    background-color:white;
+    color:black;
+    box-shadow: 0px 0px;
+}
+.result{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#pred{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.footer{
+	flex-shrink: 0;
+    text-align: center;
+    justify-content: center;
+	position: fixed;
+    bottom:0px;
+    width: 100%;
+	padding: 20px;
+	background: linear-gradient(45deg, #443B96, #F60B68, #F4483A);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}

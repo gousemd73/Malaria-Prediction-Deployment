@@ -1,0 +1,67 @@
+<html>
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css">
+    <title> Malaria Predictor</title>
+    </head>
+
+
+
+
+
+
+
+<body>
+    <div class="header">
+        <h1>Malaraia Predictor</h1>
+        <p> A Simple Deep learning Model for predicting Malaria</p>
+        </div>
+    <div class="container">
+        <div class="Image-Input">
+        <form method="post" action="{{url_for('predict')}}" id="upload-file" enctype="multipart/form-data">
+            <label for="imageupload" class="upload-label">Select a file to upload</label>
+            <input type="file" name="inpfile" id="inpfile" accept=".png,.jpg,.jpeg">
+            <div class="image_preview" id="image_preview">
+               <img src="" alt="Image Preview" class="image-preview__image"> 
+               <spam class="image_text">Image Preview</spam>
+            </div>
+            
+                <button type="submit" class="btn btn-primary btn-lg" onclick="myFunction()">Predict!</button>
+            
+            </form>
+            <br>
+
+        
+        
+        </div>
+        <div class="result">
+        <h2 id="pred">
+            {{result}}</h2>
+        </div>
+    
+    
+    </div>   
+    <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/gousemd73"><i class="fab fa-github fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with Falsk-python</p>
+       </div>
+    
+
+    </body>
+
+<script src="{{url_for('static',filename='js/main.js')}}"></script>
+
+
+
+
+
+
+
+
+
+</html>
